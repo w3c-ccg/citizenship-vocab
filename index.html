@@ -155,12 +155,35 @@ The following example is provided as a simple example of when this vocabulary
 is useful:
         </p>
 
-        <ul>
-          <li>
-Permanent Residency Card
-          </li>
-        </ul>
-
+        <pre class="example">
+{
+  "@context": [
+    "https://www.w3.org/2018/credentials/v1",
+    "https://w3id.org/citizenship/v1",
+    "https://w3id.org/uscis/v1",
+  ],
+  "id": "https://issuer.oidp.uscis.gov/credentials/83627465",
+  "type": ["VerifiableCredential", "PermanentResidentCard"],
+  "issuer": "did:example:28394728934792387",
+  "issuanceDate": "2019-12-03T12:19:52Z",
+  "expirationDate": "2029-12-03T12:19:52Z",
+  "credentialSubject": {
+    "id": "did:example:b34ca6cd37bbf23",
+    "givenName": "JOHN",
+    "familyName": "SMITH",
+    "uscisNumber": "999-999-999",
+    "birthCountry": "Bahamas",
+    "birthDate": "1958-07-17",
+    "uscisCategory": "C09",
+    "gender": "Male",
+    "residentSince": "2015-01-01",
+    "mrzInformation": "IAUSA0000007032SRC0000000703&lt;&lt;\n
+                       2001012M1105108BRA&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;5\n
+                       SPECIMEN&lt;&lt;TEST&lt;VOID&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;"
+  },
+  "proof": { ... }
+}
+        </pre>
       </section>
 
     </section>
