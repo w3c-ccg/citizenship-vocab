@@ -171,13 +171,13 @@ is useful:
     "type": "Person",
     "givenName": "JOHN",
     "familyName": "SMITH",
+    "gender": "Male",
     "image": "data:image/png;base64,iVBORw0KGgo...kJggg==",
-    "citizenNumber": "999-999-999",
+    "residentSince": "2015-01-01",
+    "lprCategory": "C09",
+    "lprNumber": "999-999-999",
     "birthCountry": "Bahamas",
     "birthDate": "1958-07-17",
-    "citizenCategory": "C09",
-    "gender": "Male",
-    "residentSince": "2015-01-01",
     "mrzInformation": "IAUSA0000007032SRC0000000703&lt;&lt;\n
                        2001012M1105108BRA&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;5\n
                        SPECIMEN&lt;&lt;TEST&lt;VOID&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;"
@@ -214,10 +214,93 @@ available for specifying information related to citizenship status.
         <tbody>
           <tr>
             <td>
-
+birthCountry
             </td>
             <td>
-
+The country in which a individual was born.
+            </td>
+          </tr>
+          <tr>
+            <td>
+birthDate
+            </td>
+            <td>
+The date on which a individual was born.
+            </td>
+          </tr>
+          <tr>
+            <td>
+familyName
+            </td>
+            <td>
+The name of the family with which the individual identifies.
+            </td>
+          </tr>
+          <tr>
+            <td>
+gender
+            </td>
+            <td>
+The gender of the individual.
+            </td>
+          </tr>
+          <tr>
+            <td>
+givenName
+            </td>
+            <td>
+The non-family name with which the individual identifies.
+            </td>
+          </tr>
+          <tr>
+            <td>
+image
+            </td>
+            <td>
+A representative image of the individual.
+            </td>
+          </tr>
+          <tr>
+            <td>
+lprCategory
+            </td>
+            <td>
+The category for a legal permanent resident as specified by the country's
+official body for making such a determination.
+            </td>
+          </tr>
+          <tr>
+            <td>
+lprNumber
+            </td>
+            <td>
+The identifier which is used to identify the legal permanent resident by the
+country's official body for making such a determination.
+            </td>
+          </tr>
+          <tr>
+            <td>
+mrzInformation
+            </td>
+            <td>
+Machine-readable information that optical character recognition systems might
+use to process information related to the citizen.
+            </td>
+          </tr>
+          <tr>
+            <td>
+Person
+            </td>
+            <td>
+Specifies that the subject of the credential is a person.
+            </td>
+          </tr>
+          <tr>
+            <td>
+residentSince
+            </td>
+            <td>
+The date from which the individual is considered a resident.
             </td>
           </tr>
         </tbody>
