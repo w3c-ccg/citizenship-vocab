@@ -159,8 +159,7 @@ is useful:
 {
   "@context": [
     "https://www.w3.org/2018/credentials/v1",
-    "https://w3id.org/citizenship/v1",
-    "https://w3id.org/uscis/v1",
+    "https://w3id.org/citizenship/v1"
   ],
   "id": "https://issuer.oidp.uscis.gov/credentials/83627465",
   "type": ["VerifiableCredential", "PermanentResidentCard"],
@@ -169,13 +168,14 @@ is useful:
   "expirationDate": "2029-12-03T12:19:52Z",
   "credentialSubject": {
     "id": "did:example:b34ca6cd37bbf23",
+    "type": "Person",
     "givenName": "JOHN",
     "familyName": "SMITH",
     "image": "data:image/png;base64,iVBORw0KGgo...kJggg==",
-    "uscisNumber": "999-999-999",
+    "citizenNumber": "999-999-999",
     "birthCountry": "Bahamas",
     "birthDate": "1958-07-17",
-    "uscisCategory": "C09",
+    "citizenCategory": "C09",
     "gender": "Male",
     "residentSince": "2015-01-01",
     "mrzInformation": "IAUSA0000007032SRC0000000703&lt;&lt;\n
@@ -214,10 +214,10 @@ available for specifying information related to citizenship status.
         <tbody>
           <tr>
             <td>
-Property
+
             </td>
             <td>
-Description
+
             </td>
           </tr>
         </tbody>
