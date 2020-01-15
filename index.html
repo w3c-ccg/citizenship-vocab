@@ -173,6 +173,7 @@ is useful:
     "familyName": "SMITH",
     "gender": "Male",
     "image": "data:image/png;base64,iVBORw0KGgo...kJggg==",
+    "imageHash": "data:application/octet-stream;base64,FXIbxDvDvDK...lTLREwA",
     "residentSince": "2015-01-01",
     "lprCategory": "C09",
     "lprNumber": "999-999-999",
@@ -262,6 +263,16 @@ A representative image of the individual.
           </tr>
           <tr>
             <td>
+imageHash
+            </td>
+            <td>
+  A digest value which uniquely identifies the representative image of the individual
+            </td>
+          </tr>
+
+
+          <tr>
+            <td>
 lprCategory
             </td>
             <td>
@@ -328,7 +339,7 @@ birthCountry
 URL
               </td>
               <td>
-https://schema.org#birthCountry
+ https://schema.org/birthPlace
               </td>
             </tr>
             <tr>
@@ -528,6 +539,54 @@ string
         </table>
 
       </section>
+      <section class="normative">
+        <h3>imageHash</h2>
+
+        <p>
+          A digest value which uniquely identifies the representative image of the individual
+        </p>
+
+        <table class="simple">
+          <tbody>
+            <tr>
+              <td>
+Term
+              </td>
+              <td>
+imageHash
+              </td>
+            </tr>
+            <tr>
+              <td>
+URL
+              </td>
+              <td>
+https://w3id.org/citizenship#imageHash
+              </td>
+            </tr>
+            <tr>
+              <td>
+Expected Value
+              </td>
+              <td>
+string
+              </td>
+            </tr>
+            <tr>
+              <td>
+Optional
+              </td>
+              <td>
+yes
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+      </section>
+
+
+
       <section class="normative">
         <h3>lprCategory</h2>
 
