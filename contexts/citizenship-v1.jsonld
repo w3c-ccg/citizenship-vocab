@@ -7,6 +7,7 @@
     "schema": "http://schema.org/",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
 
+    "PermanentResidentCard": "ctzn:PermanentResidentCard",
     "Person": "ctzn:Person",
 
     "birthCountry": "schema:birthCountry",
