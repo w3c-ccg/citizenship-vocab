@@ -1,0 +1,23 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "id": "@id",
+    "type": "@type",
+    "ctzn": "https://w3id.org/citizenship#",
+    "schema": "http://schema.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+
+    "Person": "ctzn:Person",
+
+    "birthCountry": "schema:birthCountry",
+    "birthDate": {"@id": "schema:birthDate", "@type": "xsd:dateTime"},
+    "familyName": "schema:familyName",
+    "gender": "schema:gender",
+    "givenName": "schema:givenName",
+    "image": "schema:image",
+    "lprCategory": "ctzn:lprCategory",
+    "lprNumber": "ctzn:lprNumber",
+    "mrzInformation": "ctzn:mrzInformation",
+    "residentSince": {"@id": "ctzn:residentSince", "@type": "xsd:dateTime"}
+  }
+}
