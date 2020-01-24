@@ -1,0 +1,5 @@
+*.sw[nop]
+*~
+.DS_Store
+.project
+.settings
