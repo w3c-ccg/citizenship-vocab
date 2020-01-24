@@ -208,8 +208,10 @@ available for specifying information related to citizenship status.
 
       <table class="simple">
         <thead>
-          <th>Term</th>
-          <th>Description</th>
+          <tr>
+            <th>Term</th>
+            <th>Description</th>
+          </tr>
         </thead>
         <tbody>
           <tr>
@@ -307,7 +309,7 @@ The date from which the individual is considered a resident.
       </table>
 
       <section class="normative">
-        <h3>birthCountry</h2>
+        <h3>birthCountry</h3>
 
         <p>
 The country in which a individual was born.
@@ -344,7 +346,7 @@ string
 
       </section>
       <section class="normative">
-        <h3>birthDate</h2>
+        <h3>birthDate</h3>
 
         <p>
 The date on which a individual was born.
@@ -381,7 +383,7 @@ Datetime
 
       </section>
       <section class="normative">
-        <h3>familyName</h2>
+        <h3>familyName</h3>
 
         <p>
 The name of the family with which the individual identifies.
@@ -418,7 +420,7 @@ string
 
       </section>
       <section class="normative">
-        <h3>gender</h2>
+        <h3>gender</h3>
 
         <p>
 The gender of the individual.
@@ -455,7 +457,7 @@ string
 
       </section>
       <section class="normative">
-        <h3>givenName</h2>
+        <h3>givenName</h3>
 
         <p>
 The non-family name with which the individual identifies.
@@ -492,7 +494,7 @@ string
 
       </section>
       <section class="normative">
-        <h3>image</h2>
+        <h3>image</h3>
 
         <p>
 A representative image of the individual.
@@ -529,7 +531,7 @@ string
 
       </section>
       <section class="normative">
-        <h3>lprCategory</h2>
+        <h3>lprCategory</h3>
 
         <p>
 The category for a legal permanent resident as specified by the country's official body for making such a determination.
@@ -566,7 +568,7 @@ string
 
       </section>
       <section class="normative">
-        <h3>lprNumber</h2>
+        <h3>lprNumber</h3>
 
         <p>
 The identifier which is used to identify the legal permanent resident by the country's official body for making such a determination.
@@ -603,7 +605,7 @@ string
 
       </section>
       <section class="normative">
-        <h3>mrzInformation</h2>
+        <h3>mrzInformation</h3>
 
         <p>
 Machine-readable information that optical character recognition systems might use to process information related to the citizen.
@@ -640,7 +642,7 @@ string
 
       </section>
       <section class="normative">
-        <h3>Person</h2>
+        <h3>Person</h3>
 
         <p>
 Specifies that the subject of the credential is a person.
@@ -677,7 +679,7 @@ Class
 
       </section>
       <section class="normative">
-        <h3>residentSince</h2>
+        <h3>residentSince</h3>
 
         <p>
 The date from which the individual is considered a resident.
@@ -714,41 +716,40 @@ Datetime
 
       </section>
     </section>
-  </section>
 
-  <section class="informative">
-    <h2>Privacy Considerations</h2>
+    <section class="informative">
+      <h2>Privacy Considerations</h2>
 
-    <p>
+      <p>
 This section details the general privacy considerations and specific privacy
 implications of deploying this specification into production environments.
-    </p>
+      </p>
 
-  </section>
+    </section>
 
-  <section class="informative">
-    <h2>Security Considerations</h2>
+    <section class="informative">
+      <h2>Security Considerations</h2>
 
-    <p>
+      <p>
 There are a number of security considerations that implementers should be
 aware of when processing data described by this specification. Ignoring or
 not understanding the implications of this section can result in
 security vulnerabilities.
-    </p>
+      </p>
 
-    <p>
+      <p>
 While this section attempts to highlight a broad set of security
 considerations, it is not a complete list. Implementers are urged to seek the
 advice of security and cryptography professionals when implementing mission
 critical systems using the technology outlined in this specification.
-    </p>
+      </p>
 
-  </section>
+    </section>
 
-  <section class="informative">
-    <h2>Accessibility Considerations</h2>
+    <section class="informative">
+      <h2>Accessibility Considerations</h2>
 
-    <p>
+      <p>
 There are a number of accessibility considerations implementers should be
 aware of when processing data described in this specification. As with any web
 standards or protocols implementation, ignoring accessibility issues makes
@@ -757,33 +758,33 @@ to follow accessibility guidelines and standards, such as [[WCAG21]], to ensure
 all people, regardless of ability, can make use of this data. This is
 especially important when establishing systems utilizing cryptography, which
 have historically created problems for assistive technologies.
-    </p>
+      </p>
 
-    <p>
+      <p>
 This section details the general accessibility considerations to take into
 account when utilizing this data model.
-    </p>
+      </p>
 
-  </section>
+    </section>
 
-  <section class="informative">
-    <h2>Internationalization Considerations</h2>
+    <section class="informative">
+      <h2>Internationalization Considerations</h2>
 
-    <p>
+      <p>
 There are a number of internationalization considerations implementers should be
 aware of when publishing data described in this specification. As with any web
 standards or protocols implementation, ignoring internationalization makes it
 difficult for data to be produced and consumed across a disparate set of
 languages and societies, which would limit the applicability of the
 specification and significantly diminish its value as a standard.
-    </p>
+      </p>
 
-    <p>
+      <p>
 This section outlines general internationalization considerations to take into
 account when utilizing this data model.
-    </p>
+      </p>
 
-  </section>
+    </section>
 
   </body>
 </html>
