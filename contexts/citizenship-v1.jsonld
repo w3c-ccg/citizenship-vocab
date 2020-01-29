@@ -3,10 +3,24 @@
     "@version": 1.1,
     "@protected": true,
 
-    "PermanentResidentCard":
-      "https://w3id.org/citizenship#PermanentResidentCard",
+    "name": "http://schema.org/name",
+    "description": "http://schema.org/description",
+    "image": {"@id": "http://schema.org/image", "@type": "@id"},
 
-    "Person": "http://schema.org/Person",
+    "PermanentResidentCard": {
+      "@id": "https://w3id.org/citizenship#PermanentResidentCard",
+      "@context": {
+        "@version": 1.1,
+        "@protected": true,
+
+        "id": "@id",
+        "type": "@type",
+
+        "name": "http://schema.org/name",
+        "description": "http://schema.org/description",
+        "image": {"@id": "http://schema.org/image", "@type": "@id"}
+      }
+    },
 
     "PermanentResident": {
       "@id": "https://w3id.org/citizenship#PermanentResident",
@@ -32,6 +46,8 @@
         "mrzInformation": "ctzn:mrzInformation",
         "residentSince": {"@id": "ctzn:residentSince", "@type": "xsd:dateTime"}
       }
-    }
+    },
+
+    "Person": "http://schema.org/Person"
   }
 }
