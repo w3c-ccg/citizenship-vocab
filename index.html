@@ -168,7 +168,7 @@ is useful:
   "expirationDate": "2029-12-03T12:19:52Z",
   "credentialSubject": {
     "id": "did:example:b34ca6cd37bbf23",
-    "type": "Person",
+    "type": ["PermanentResident", "Person"],
     "givenName": "JOHN",
     "familyName": "SMITH",
     "gender": "Male",
@@ -635,6 +635,43 @@ Expected Value
               </td>
               <td>
 string
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+      </section>
+      <section class="normative">
+        <h3>PermanentResident</h3>
+
+        <p>
+Specifies that the subject of the credential is a permanent resident.
+        </p>
+
+        <table class="simple">
+          <tbody>
+            <tr>
+              <td>
+Term
+              </td>
+              <td>
+PermanentResident
+              </td>
+            </tr>
+            <tr>
+              <td>
+URL
+              </td>
+              <td>
+https://w3id.org/citizenship#PermanentResident
+              </td>
+            </tr>
+            <tr>
+              <td>
+Expected Value
+              </td>
+              <td>
+Class
               </td>
             </tr>
           </tbody>

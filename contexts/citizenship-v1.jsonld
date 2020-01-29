@@ -3,8 +3,13 @@
     "@version": 1.1,
     "@protected": true,
 
-    "PermanentResidentCard": {
-      "@id": "https://w3id.org/citizenship#PermanentResidentCard",
+    "PermanentResidentCard":
+      "https://w3id.org/citizenship#PermanentResidentCard",
+
+    "Person": "http://schema.org/Person",
+
+    "PermanentResident": {
+      "@id": "https://w3id.org/citizenship#PermanentResident",
       "@context": {
         "@version": 1.1,
         "@protected": true,
@@ -15,8 +20,6 @@
         "ctzn": "https://w3id.org/citizenship#",
         "schema": "http://schema.org/",
         "xsd": "http://www.w3.org/2001/XMLSchema#",
-
-        "Person": "schema:Person",
 
         "birthCountry": "schema:birthCountry",
         "birthDate": {"@id": "schema:birthDate", "@type": "xsd:dateTime"},
