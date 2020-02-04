@@ -43,7 +43,6 @@
         "image": {"@id": "schema:image", "@type": "@id"},
         "lprCategory": "ctzn:lprCategory",
         "lprNumber": "ctzn:lprNumber",
-        "mrzInformation": "ctzn:mrzInformation",
         "residentSince": {"@id": "ctzn:residentSince", "@type": "xsd:dateTime"}
       }
     },
