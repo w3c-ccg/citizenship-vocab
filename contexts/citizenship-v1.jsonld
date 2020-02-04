@@ -16,8 +16,8 @@
         "id": "@id",
         "type": "@type",
 
-        "name": "http://schema.org/name",
         "description": "http://schema.org/description",
+        "name": "http://schema.org/name",
         "image": {"@id": "http://schema.org/image", "@type": "@id"}
       }
     },
@@ -35,12 +35,12 @@
         "schema": "http://schema.org/",
         "xsd": "http://www.w3.org/2001/XMLSchema#",
 
-        "birthCountry": "schema:birthCountry",
+        "birthCountry": "ctzn:birthCountry",
         "birthDate": {"@id": "schema:birthDate", "@type": "xsd:dateTime"},
+        "commuterClassification": "ctzn:commuterClassification",
         "familyName": "schema:familyName",
         "gender": "schema:gender",
         "givenName": "schema:givenName",
-        "image": {"@id": "schema:image", "@type": "@id"},
         "lprCategory": "ctzn:lprCategory",
         "lprNumber": "ctzn:lprNumber",
         "residentSince": {"@id": "ctzn:residentSince", "@type": "xsd:dateTime"}

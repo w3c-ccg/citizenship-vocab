@@ -160,6 +160,8 @@ is useful:
   "@context": [
     "https://www.w3.org/2018/credentials/v1",
     "https://w3id.org/citizenship/v1"
+    <span class="comment">// optional country-specific context can be added below</span>
+    <span class="comment">// e.g., https://www.uscis.gov/prc/v1</span>
   ],
   "id": "https://issuer.oidp.uscis.gov/credentials/83627465",
   "type": ["VerifiableCredential", "PermanentResidentCard"],
@@ -176,6 +178,7 @@ is useful:
     "residentSince": "2015-01-01",
     "lprCategory": "C09",
     "lprNumber": "999-999-999",
+    "commuterClassification": "C1",
     "birthCountry": "Bahamas",
     "birthDate": "1958-07-17"
   },
@@ -225,6 +228,15 @@ birthDate
             </td>
             <td>
 The date on which a individual was born.
+            </td>
+          </tr>
+          <tr>
+            <td>
+commuterClassification
+            </td>
+            <td>
+A code that specifies whether an individual lives in a specific country or
+commutes across a border to work.
             </td>
           </tr>
           <tr>
@@ -380,6 +392,44 @@ Expected Value
               </td>
               <td>
 Datetime
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+      </section>
+      <section class="normative">
+        <h3>commuterClassification</h3>
+
+        <p>
+A code that specifies whether an individual lives in a particular country or
+commutes across a border to work.
+        </p>
+
+        <table class="simple">
+          <tbody>
+            <tr>
+              <td>
+Term
+              </td>
+              <td>
+commuterClassification
+              </td>
+            </tr>
+            <tr>
+              <td>
+URL
+              </td>
+              <td>
+https://w3id.org/citizenship#commuterClassification
+              </td>
+            </tr>
+            <tr>
+              <td>
+Expected Value
+              </td>
+              <td>
+String
               </td>
             </tr>
           </tbody>
