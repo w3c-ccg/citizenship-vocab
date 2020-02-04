@@ -182,7 +182,6 @@ is useful:
     "birthCountry": "Bahamas",
     "birthDate": "1958-07-17"
   },
-  "proof": { ... }
 }
         </pre>
       </section>
@@ -202,8 +201,49 @@ is useful:
 
       <p>
 This vocabulary assumes all terms specified in the base Verifiable
-Credentials [[VC-DATA-MODEL]] context. In addition, the following terms are
-available for specifying information related to citizenship status.
+Credentials [[VC-DATA-MODEL]] context. In addition, the following classes
+are available for specifying information related to residency and citizenship
+status.
+      </p>
+
+      <table class="simple">
+        <thead>
+          <tr>
+            <th>Class</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+PermanentResident
+            </td>
+            <td>
+Specifies that the subject of the credential is a permanent resident.
+            </td>
+          </tr>
+          <tr>
+            <td>
+PermanentResidentCard
+            </td>
+            <td>
+Specifies that the credential is a permanent resident card.
+            </td>
+          </tr>
+          <tr>
+            <td>
+Person
+            </td>
+            <td>
+Specifies that the subject of the credential is a person.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>
+This document also specifies the following terms for expressing residency and
+citizenship status:
       </p>
 
       <table class="simple">
@@ -287,30 +327,6 @@ lprNumber
             <td>
 The identifier which is used to identify the legal permanent resident by the
 country's official body for making such a determination.
-            </td>
-          </tr>
-          <tr>
-            <td>
-PermanentResidentCard
-            </td>
-            <td>
-Specifies that the credential is a permanent resident card.
-            </td>
-          </tr>
-          <tr>
-            <td>
-PermanentResident
-            </td>
-            <td>
-Specifies that the subject of the credential is a permanent resident.
-            </td>
-          </tr>
-          <tr>
-            <td>
-Person
-            </td>
-            <td>
-Specifies that the subject of the credential is a person.
             </td>
           </tr>
           <tr>
