@@ -5,6 +5,7 @@
 
     "name": "http://schema.org/name",
     "description": "http://schema.org/description",
+    "identifier": "http://schema.org/identifier",
     "image": {"@id": "http://schema.org/image", "@type": "@id"},
 
     "PermanentResidentCard": {
@@ -18,6 +19,7 @@
 
         "description": "http://schema.org/description",
         "name": "http://schema.org/name",
+        "identifier": "http://schema.org/identifier",
         "image": {"@id": "http://schema.org/image", "@type": "@id"}
       }
     },
