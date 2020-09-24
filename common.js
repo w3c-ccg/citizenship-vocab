@@ -1,6 +1,5 @@
 /* globals omitTerms, respecConfig, $, require */
 /* exported linkCrossReferences, restrictReferences, fixIncludes */
-
 var ccg = {
   // Add as the respecConfig localBiblio variable
   // Extend or override global respec references
@@ -97,7 +96,7 @@ function restrictReferences(utils, content) {
     // remove any terms they reference from the termNames array too.
     $.each(base.querySelectorAll("dfn"), function(i, item) {
         var $t = $(item) ;
-        var titles = $t.getDfnTitles();
+        var titles = ''; //$t.getDfnTitles();
         var dropit = false;
         // do we have an omitTerms
         if (window.hasOwnProperty("omitTerms")) {
@@ -125,7 +124,7 @@ function restrictReferences(utils, content) {
             $t.parent().next().remove();
             $t.parent().remove();
         } else {
-            var n = $t.makeID("dfn", titles[0]);
+            var n = 0;//$t.makeID("dfn", titles[0]);
             if (n) {
                 termNames[n] = $t.parent() ;
             }
@@ -133,7 +132,7 @@ function restrictReferences(utils, content) {
     });
 
     var $container = $(".termlist",base) ;
-    var containerID = $container.makeID("", "terms") ;
+    var containerID = 0;//$container.makeID("", "terms") ;
     termLists.push(containerID) ;
 
     return (base.innerHTML);
