@@ -282,6 +282,15 @@ Specifies that the subject of the credential is a person.
           </tr>
           <tr>
             <td>
+PostalAddress
+            </td>
+            <td>
+A mailing address.
+            </td>
+          </tr>
+
+          <tr>
+            <td>
 QuantitativeValue
             </td>
             <td>
@@ -305,6 +314,30 @@ citizenship status:
           </tr>
         </thead>
         <tbody>
+          <tr>
+            <td>
+addressCountry
+            </td>
+            <td>
+The country code provided as a two-letter ISO 3166-1 alpha-2 country code.
+            </td>
+          </tr>
+          <tr>
+            <td>
+addressLocality
+            </td>
+            <td>
+The locality of within an `addressRegion`.
+            </td>
+          </tr>
+          <tr>
+            <td>
+addressRegion
+            </td>
+            <td>
+The region within an `addressCountry`.
+            </td>
+          </tr>
           <tr>
             <td>
 birthCountry
@@ -390,6 +423,14 @@ country's official body for making such a determination.
           </tr>
           <tr>
             <td>
+residence
+            </td>
+            <td>
+The `PostalAddress` in which the `Person` currently resides.
+            </td>
+          </tr>
+          <tr>
+            <td>
 residentSince
             </td>
             <td>
@@ -417,6 +458,117 @@ The value of a `QuantitativeValue`. Used with `height`.
         </tbody>
       </table>
 
+      <section class="normative">
+        <h3>addressCountry</h3>
+
+        <p>
+The country code provided as a two-letter ISO 3166-1 alpha-2 country code.
+        </p>
+
+        <table class="simple">
+          <tbody>
+            <tr>
+              <td>
+Term
+              </td>
+              <td>
+addressCountry
+              </td>
+            </tr>
+            <tr>
+              <td>
+URL
+              </td>
+              <td>
+http://schema.org/addressCountry
+              </td>
+            </tr>
+            <tr>
+              <td>
+Expected Value
+              </td>
+              <td>
+string
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+      </section>
+      <section class="normative">
+        <h3>addressLocality</h3>
+
+        <p>
+The locality of within an `addressRegion`.
+        </p>
+
+        <table class="simple">
+          <tbody>
+            <tr>
+              <td>
+Term
+              </td>
+              <td>
+addressLocality
+              </td>
+            </tr>
+            <tr>
+              <td>
+URL
+              </td>
+              <td>
+http://schema.org/addressLocality
+              </td>
+            </tr>
+            <tr>
+              <td>
+Expected Value
+              </td>
+              <td>
+string
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+      </section>
+      <section class="normative">
+        <h3>addressRegion</h3>
+
+        <p>
+The region within an `addressCountry`.
+        </p>
+
+        <table class="simple">
+          <tbody>
+            <tr>
+              <td>
+Term
+              </td>
+              <td>
+addressRegion
+              </td>
+            </tr>
+            <tr>
+              <td>
+URL
+              </td>
+              <td>
+http://schema.org/addressRegion
+              </td>
+            </tr>
+            <tr>
+              <td>
+Expected Value
+              </td>
+              <td>
+string
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+      </section>
       <section class="normative">
         <h3>birthCountry</h3>
 
@@ -938,6 +1090,44 @@ Class
         </table>
 
       </section>
+      <section class="normative">
+        <h3>PostalAddress</h3>
+
+        <p>
+A mailing address.
+        </p>
+
+        <table class="simple">
+          <tbody>
+            <tr>
+              <td>
+Term
+              </td>
+              <td>
+PostalAddress
+              </td>
+            </tr>
+            <tr>
+              <td>
+URL
+              </td>
+              <td>
+http://schema.org/PostalAddress
+              </td>
+            </tr>
+            <tr>
+              <td>
+Expected Value
+              </td>
+              <td>
+Class
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+      </section>
+
       <section class="normative">
         <h3>QuantitativeValue</h3>
 
