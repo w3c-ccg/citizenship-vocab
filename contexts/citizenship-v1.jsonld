@@ -48,11 +48,21 @@
         "height": "https://schema.org/height",
         "lprCategory": "ctzn:lprCategory",
         "lprNumber": "ctzn:lprNumber",
+        "residence": "ctzn:residence",
         "residentSince": {"@id": "ctzn:residentSince", "@type": "xsd:dateTime"}
       }
     },
 
     "Person": "http://schema.org/Person",
+
+    "PostalAddress": {
+      "@id": "https://schema.org/PostalAddress",
+      "@context": {
+        "addressCountry": "https://schema.org/addressCountry",
+        "addressLocality": "https://schema.org/addressLocality",
+        "addressRegion": "https://schema.org/addressRegion"
+      }
+    },
 
     "QuantitativeValue": "https://schema.org/QuantitativeValue"
   }
