@@ -7,6 +7,8 @@
     "description": "http://schema.org/description",
     "identifier": "http://schema.org/identifier",
     "image": {"@id": "http://schema.org/image", "@type": "@id"},
+    "unitCode": "https://schema.org/unitCode",
+    "value": "https://schema.org/value",
 
     "PermanentResidentCard": {
       "@id": "https://w3id.org/citizenship#PermanentResidentCard",
@@ -43,12 +45,15 @@
         "familyName": "schema:familyName",
         "gender": "schema:gender",
         "givenName": "schema:givenName",
+        "height": "https://schema.org/height",
         "lprCategory": "ctzn:lprCategory",
         "lprNumber": "ctzn:lprNumber",
         "residentSince": {"@id": "ctzn:residentSince", "@type": "xsd:dateTime"}
       }
     },
 
-    "Person": "http://schema.org/Person"
+    "Person": "http://schema.org/Person",
+
+    "QuantitativeValue": "https://schema.org/QuantitativeValue"
   }
 }

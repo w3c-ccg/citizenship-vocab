@@ -269,6 +269,15 @@ Person
 Specifies that the subject of the credential is a person.
             </td>
           </tr>
+          <tr>
+            <td>
+QuantitativeValue
+            </td>
+            <td>
+A point value or interval for product characteristics and other purposes. Used
+with `height`.
+            </td>
+          </tr>
         </tbody>
       </table>
 
@@ -336,6 +345,14 @@ The non-family name with which the individual identifies.
           </tr>
           <tr>
             <td>
+height
+            </td>
+            <td>
+The height of the item.
+            </td>
+          </tr>
+          <tr>
+            <td>
 image
             </td>
             <td>
@@ -366,6 +383,24 @@ residentSince
             </td>
             <td>
 The date from which the individual is considered a resident.
+            </td>
+          </tr>
+          <tr>
+            <td>
+unitCode
+            </td>
+            <td>
+The unit of measurement given using the UN/CEFACT Common Code (3 characters) or
+a URL. Other codes than the UN/CEFACT Common Code may be used with a prefix
+followed by a colon. Used with `height`.
+            </td>
+          </tr>
+          <tr>
+            <td>
+value
+            </td>
+            <td>
+The value of a `QuantitativeValue`. Used with `height`.
             </td>
           </tr>
         </tbody>
@@ -594,6 +629,44 @@ string
         </table>
 
       </section>
+      <section class="normative">
+        <h3>height</h3>
+
+        <p>
+The height of the item expressed as a <a>QuantitativeValue</a>.
+        </p>
+
+        <table class="simple">
+          <tbody>
+            <tr>
+              <td>
+Term
+              </td>
+              <td>
+height
+              </td>
+            </tr>
+            <tr>
+              <td>
+URL
+              </td>
+              <td>
+http://schema.org/height
+              </td>
+            </tr>
+            <tr>
+              <td>
+Expected Value
+              </td>
+              <td>
+string
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+      </section>
+
       <section class="normative">
         <h3>identifier</h3>
 
@@ -855,6 +928,43 @@ Class
 
       </section>
       <section class="normative">
+        <h3>QuantitativeValue</h3>
+
+        <p>
+A point value or interval for product characteristics and other purposes.
+        </p>
+
+        <table class="simple">
+          <tbody>
+            <tr>
+              <td>
+Term
+              </td>
+              <td>
+QuantitativeValue
+              </td>
+            </tr>
+            <tr>
+              <td>
+URL
+              </td>
+              <td>
+http://schema.org/QuantitativeValue
+              </td>
+            </tr>
+            <tr>
+              <td>
+Expected Value
+              </td>
+              <td>
+Class
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+      </section>
+      <section class="normative">
         <h3>residentSince</h3>
 
         <p>
@@ -891,6 +1001,85 @@ Datetime
         </table>
 
       </section>
+
+      <section class="normative">
+        <h3>unitCode</h3>
+
+        <p>
+The unit of measurement given using the UN/CEFACT Common Code (3 characters) or
+a URL. Other codes than the UN/CEFACT Common Code may be used with a prefix
+followed by a colon. Used with `height`.
+        </p>
+
+        <table class="simple">
+          <tbody>
+            <tr>
+              <td>
+Term
+              </td>
+              <td>
+unitCode
+              </td>
+            </tr>
+            <tr>
+              <td>
+URL
+              </td>
+              <td>
+https://schema.org/unitCode
+              </td>
+            </tr>
+            <tr>
+              <td>
+Expected Value
+              </td>
+              <td>
+string
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+      </section>
+
+      <section class="normative">
+        <h3>value</h3>
+
+        <p>
+The value of a `QuantitativeValue`. Used with `height`.
+        </p>
+
+        <table class="simple">
+          <tbody>
+            <tr>
+              <td>
+Term
+              </td>
+              <td>
+value
+              </td>
+            </tr>
+            <tr>
+              <td>
+URL
+              </td>
+              <td>
+https://schema.org/unitCode
+              </td>
+            </tr>
+            <tr>
+              <td>
+Expected Value
+              </td>
+              <td>
+Number
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+      </section>
+
     </section>
 
     <section class="informative">
