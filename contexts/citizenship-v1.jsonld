@@ -45,6 +45,7 @@
         "birthDate": {"@id": "schema:birthDate", "@type": "xsd:dateTime"},
         "commuterClassification": "ctzn:commuterClassification",
         "familyName": "schema:familyName",
+        "formerNationality": "ctzn:#formerNationality",
         "gender": "schema:gender",
         "givenName": "schema:givenName",
         "height": "https://schema.org/height",
