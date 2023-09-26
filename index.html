@@ -196,6 +196,7 @@ is useful:
     "id": "did:example:b34ca6cd37bbf23",
     "type": ["PermanentResident", "Person"],
     "givenName": "JOHN",
+    "additionalName": "JACOB",
     "familyName": "SMITH",
     "gender": "Male",
     "image": "data:image/png;base64,iVBORw0KGgo...kJggg==",
@@ -325,6 +326,14 @@ citizenship status:
           </tr>
         </thead>
         <tbody>
+          <tr>
+            <td>
+additionalName
+            </td>
+            <td>
+An additional name for a Person, can be used for a middle name.
+            </td>
+          </tr>
           <tr>
             <td>
 addressCountry
@@ -477,6 +486,43 @@ The value of a `QuantitativeValue`. Used with `height`.
         </tbody>
       </table>
 
+      <section class="normative">
+        <h3>additionalName</h3>
+
+        <p>
+An additional name for a Person, can be used for a middle name.
+        </p>
+
+        <table class="simple">
+          <tbody>
+            <tr>
+              <td>
+Term
+              </td>
+              <td>
+additionalName
+              </td>
+            </tr>
+            <tr>
+              <td>
+URL
+              </td>
+              <td>
+http://schema.org/additionalName
+              </td>
+            </tr>
+            <tr>
+              <td>
+Expected Value
+              </td>
+              <td>
+string
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+      </section>
       <section class="normative">
         <h3>addressCountry</h3>
 

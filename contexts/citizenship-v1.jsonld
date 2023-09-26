@@ -40,6 +40,7 @@
         "schema": "http://schema.org/",
         "xsd": "http://www.w3.org/2001/XMLSchema#",
 
+        "additionalName": "https://schema.org/additionalName",
         "birthCountry": "ctzn:birthCountry",
         "birthDate": {"@id": "schema:birthDate", "@type": "xsd:dateTime"},
         "commuterClassification": "ctzn:commuterClassification",
