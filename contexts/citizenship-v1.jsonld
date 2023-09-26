@@ -21,6 +21,7 @@
 
         "description": "http://schema.org/description",
         "name": "http://schema.org/name",
+        "filingLocation": "https://w3id.org/citizenship#filingLocation",
         "identifier": "http://schema.org/identifier",
         "image": {"@id": "http://schema.org/image", "@type": "@id"}
       }
