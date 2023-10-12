@@ -1,0 +1,68 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "@protected": true,
+
+    "name": "https://schema.org/name",
+    "description": "https://schema.org/description",
+    "identifier": "https://schema.org/identifier",
+    "image": {"@id": "https://schema.org/image", "@type": "@id"},
+    "unitCode": "https://schema.org/unitCode",
+    "value": "https://schema.org/value",
+
+    "PermanentResidentCard": {
+      "@id": "https://w3id.org/citizenship#PermanentResidentCard",
+      "@context": {
+        "@version": 1.1,
+        "@protected": true,
+
+        "id": "@id",
+        "type": "@type",
+
+        "description": "https://schema.org/description",
+        "name": "https://schema.org/name",
+        "filingLocation": "https://w3id.org/citizenship#filingLocation",
+        "identifier": "https://schema.org/identifier",
+        "image": {"@id": "https://schema.org/image", "@type": "@id"}
+      }
+    },
+
+    "PermanentResident": {
+      "@id": "https://w3id.org/citizenship#PermanentResident",
+      "@context": {
+        "@version": 1.1,
+        "@protected": true,
+
+        "id": "@id",
+        "type": "@type",
+
+        "additionalName": "https://schema.org/additionalName",
+        "birthCountry": "https://w3id.org/citizenship#birthCountry",
+        "birthDate": {"@id": "https://schema.org/birthDate", "@type": "http://www.w3.org/2001/XMLSchema#dateTime"},
+        "commuterClassification": "https://w3id.org/citizenship#commuterClassification",
+        "familyName": "https://schema.org/familyName",
+        "formerNationality": "https://w3id.org/citizenship#formerNationality",
+        "gender": "https://schema.org/gender",
+        "givenName": "https://schema.org/givenName",
+        "height": "https://schema.org/height",
+        "lprCategory": "https://w3id.org/citizenship#lprCategory",
+        "lprNumber": "https://w3id.org/citizenship#lprNumber",
+        "residence": "https://w3id.org/citizenship#residence",
+        "residentSince": {"@id": "https://w3id.org/citizenship#residentSince", "@type": "http://www.w3.org/2001/XMLSchema#dateTime"}
+      }
+    },
+
+    "Person": "https://schema.org/Person",
+
+    "PostalAddress": {
+      "@id": "https://schema.org/PostalAddress",
+      "@context": {
+        "addressCountry": "https://schema.org/addressCountry",
+        "addressLocality": "https://schema.org/addressLocality",
+        "addressRegion": "https://schema.org/addressRegion"
+      }
+    },
+
+    "QuantitativeValue": "https://schema.org/QuantitativeValue"
+  }
+}

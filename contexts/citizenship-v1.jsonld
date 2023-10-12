@@ -7,8 +7,6 @@
     "description": "http://schema.org/description",
     "identifier": "http://schema.org/identifier",
     "image": {"@id": "http://schema.org/image", "@type": "@id"},
-    "unitCode": "https://schema.org/unitCode",
-    "value": "https://schema.org/value",
 
     "PermanentResidentCard": {
       "@id": "https://w3id.org/citizenship#PermanentResidentCard",
@@ -21,7 +19,6 @@
 
         "description": "http://schema.org/description",
         "name": "http://schema.org/name",
-        "filingLocation": "https://w3id.org/citizenship#filingLocation",
         "identifier": "http://schema.org/identifier",
         "image": {"@id": "http://schema.org/image", "@type": "@id"}
       }
@@ -40,33 +37,18 @@
         "schema": "http://schema.org/",
         "xsd": "http://www.w3.org/2001/XMLSchema#",
 
-        "additionalName": "https://schema.org/additionalName",
         "birthCountry": "ctzn:birthCountry",
         "birthDate": {"@id": "schema:birthDate", "@type": "xsd:dateTime"},
         "commuterClassification": "ctzn:commuterClassification",
         "familyName": "schema:familyName",
-        "formerNationality": "ctzn:#formerNationality",
         "gender": "schema:gender",
         "givenName": "schema:givenName",
-        "height": "https://schema.org/height",
         "lprCategory": "ctzn:lprCategory",
         "lprNumber": "ctzn:lprNumber",
-        "residence": "ctzn:residence",
         "residentSince": {"@id": "ctzn:residentSince", "@type": "xsd:dateTime"}
       }
     },
 
-    "Person": "http://schema.org/Person",
-
-    "PostalAddress": {
-      "@id": "https://schema.org/PostalAddress",
-      "@context": {
-        "addressCountry": "https://schema.org/addressCountry",
-        "addressLocality": "https://schema.org/addressLocality",
-        "addressRegion": "https://schema.org/addressRegion"
-      }
-    },
-
-    "QuantitativeValue": "https://schema.org/QuantitativeValue"
+    "Person": "http://schema.org/Person"
   }
 }
