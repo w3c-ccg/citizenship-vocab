@@ -6,8 +6,6 @@
     "description": "https://schema.org/description",
     "identifier": "https://schema.org/identifier",
     "image": {"@id": "https://schema.org/image", "@type": "@id"},
-    "unitCode": "https://schema.org/unitCode",
-    "value": "https://schema.org/value",
 
     "PermanentResidentCard": {
       "@id": "https://w3id.org/citizenship#PermanentResidentCard",
@@ -62,6 +60,14 @@
       }
     },
 
-    "QuantitativeValue": "https://schema.org/QuantitativeValue"
+    "QuantitativeValue": {
+      "@id": "https://schema.org/QuantitativeValue",
+      "@context": {
+        "@protected": true,
+
+        "unitCode": "https://schema.org/unitCode",
+        "value": "https://schema.org/value"
+      }
+    }
   }
 }
