@@ -54,6 +54,8 @@
     "PostalAddress": {
       "@id": "https://schema.org/PostalAddress",
       "@context": {
+        "@protected": true,
+
         "addressCountry": "https://schema.org/addressCountry",
         "addressLocality": "https://schema.org/addressLocality",
         "addressRegion": "https://schema.org/addressRegion"
