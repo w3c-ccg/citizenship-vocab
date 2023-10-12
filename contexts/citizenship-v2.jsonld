@@ -1,6 +1,5 @@
 {
   "@context": {
-    "@version": 1.1,
     "@protected": true,
 
     "name": "https://schema.org/name",
@@ -13,7 +12,6 @@
     "PermanentResidentCard": {
       "@id": "https://w3id.org/citizenship#PermanentResidentCard",
       "@context": {
-        "@version": 1.1,
         "@protected": true,
 
         "id": "@id",
@@ -30,7 +28,6 @@
     "PermanentResident": {
       "@id": "https://w3id.org/citizenship#PermanentResident",
       "@context": {
-        "@version": 1.1,
         "@protected": true,
 
         "id": "@id",
