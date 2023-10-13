@@ -2,7 +2,15 @@
   "@context": {
     "@protected": true,
 
-    "PermanentResidentCardCredential": "https://w3id.org/citizenship#PermanentResidentCardCredential",
+    "PermanentResidentCardCredential": {
+      "@id": "https://w3id.org/citizenship#PermanentResidentCardCredential",
+      "@context": {
+        "@protected": true,
+
+        "description": "https://schema.org/description",
+        "name": "https://schema.org/name"
+      }
+    },
 
     "PermanentResidentCard": {
       "@id": "https://w3id.org/citizenship#PermanentResidentCard",
@@ -12,13 +20,11 @@
         "id": "@id",
         "type": "@type",
 
-        "description": "https://schema.org/description",
         "filingLocation": {"@id": "https://w3id.org/citizenship#filingLocation", "@type": "@id"},
         "identifier": "https://schema.org/identifier",
         "image": {"@id": "https://schema.org/image", "@type": "@id"},
         "lprCategory": "https://w3id.org/citizenship#lprCategory",
-        "lprNumber": "https://w3id.org/citizenship#lprNumber",
-        "name": "https://schema.org/name"
+        "lprNumber": "https://w3id.org/citizenship#lprNumber"
       }
     },
 
