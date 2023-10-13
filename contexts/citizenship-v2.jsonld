@@ -2,10 +2,7 @@
   "@context": {
     "@protected": true,
 
-    "name": "https://schema.org/name",
-    "description": "https://schema.org/description",
-    "identifier": "https://schema.org/identifier",
-    "image": {"@id": "https://schema.org/image", "@type": "@id"},
+    "PermanentResidentCardCredential": "https://w3id.org/citizenship#PermanentResidentCardCredential",
 
     "PermanentResidentCard": {
       "@id": "https://w3id.org/citizenship#PermanentResidentCard",
@@ -16,10 +13,10 @@
         "type": "@type",
 
         "description": "https://schema.org/description",
-        "name": "https://schema.org/name",
-        "filingLocation": "https://w3id.org/citizenship#filingLocation",
+        "filingLocation": {"@id": "https://w3id.org/citizenship#filingLocation", "@type": "@id"},
         "identifier": "https://schema.org/identifier",
-        "image": {"@id": "https://schema.org/image", "@type": "@id"}
+        "image": {"@id": "https://schema.org/image", "@type": "@id"},
+        "name": "https://schema.org/name"
       }
     },
 
@@ -42,6 +39,10 @@
         "height": "https://schema.org/height",
         "lprCategory": "https://w3id.org/citizenship#lprCategory",
         "lprNumber": "https://w3id.org/citizenship#lprNumber",
+        "maritalStatus": "https://w3id.org/citizenship#maritalStatus",
+        "marriageCertificateNumber": "https://w3id.org/citizenship#marriageCertificateNumber",
+        "marriageLocation": {"@id": "https://w3id.org/citizenship#marriageLocation", "@type": "@id"},
+        "permanentResidentCard": {"@id": "https://w3id.org/citizenship#permanentResidentCard", "@type": "@id"},
         "residence": "https://w3id.org/citizenship#residence",
         "residentSince": {"@id": "https://w3id.org/citizenship#residentSince", "@type": "http://www.w3.org/2001/XMLSchema#dateTime"}
       }
