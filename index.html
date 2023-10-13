@@ -1629,13 +1629,18 @@ account when utilizing this data model.
 
       <ul>
         <li>
+Improve JSON-LD context type scoping.
+        </li>
+        <li>
 Change outer `VerifiableCredential` type to `PermanentResidentCardCredential`.
         </li>
         <li>
-Change `credentialSubject` to a `Person` and `PermanentResident`.
+Add `permanentResidentCard` property for `PermanentResident` which has a
+value type of `PermanentResidentCard`. Move scoped properties to
+`PermanentResidentCard` as appropriate.
         </li>
         <li>
-Add `permanentResidentCard` property for `PermanentResident`.
+Add additional person properties.
         </li>
       </ul>
     </section>
