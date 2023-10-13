@@ -185,11 +185,8 @@ is useful:
     <span class="comment">// e.g., https://uscis.gov/prc/v1</span>
   ],
   "id": "https://issuer.oidp.uscis.gov/credentials/83627465",
-  "type": ["VerifiableCredential", "PermanentResidentCard"],
+  "type": ["VerifiableCredential", "PermanentResidentCardCredential"],
   "issuer": "did:example:28394728934792387",
-  "identifier": "83627465",
-  "name": "Permanent Resident Card",
-  "description": "Government of Example Permanent Resident Card.",
   "issuanceDate": "2019-12-03T12:19:52Z",
   "expirationDate": "2029-12-03T12:19:52Z",
   "credentialSubject": {
@@ -199,7 +196,6 @@ is useful:
     "additionalName": "JACOB",
     "familyName": "SMITH",
     "gender": "Male",
-    "image": "data:image/png;base64,iVBORw0KGgo...kJggg==",
     "residentSince": "2015-01-01",
     "lprCategory": "C09",
     "lprNumber": "999-999-999",
@@ -214,12 +210,7 @@ is useful:
     "residence": {
       "type": "PostalAddress",
       "addressLocality": "Boston",
-      "addressRegion": "Massachusetts"
-    },
-    "filingLocation": {
-      "type": "PostalAddress",
-      "addressLocality": "Washington, D.C.",
-      "addressRegion": "District of Columbia",
+      "addressRegion": "Massachusetts",
       "addressCountry": "US"
     },
     "formerNationality": "BS",
@@ -230,6 +221,19 @@ is useful:
       "addressLocality": "Nassau",
       "addressRegion": "New Providence",
       "addressCountry": "BS"
+    },
+    "permanentResidentCard": {
+      "type": "PermanentResidentCard",
+      "identifier": "83627465",
+      "name": "Permanent Resident Card",
+      "description": "Government of Example Permanent Resident Card.",
+      "image": "data:image/png;base64,iVBORw0KGgo...kJggg==",
+      "filingLocation": {
+        "type": "PostalAddress",
+        "addressLocality": "Washington, D.C.",
+        "addressRegion": "District of Columbia",
+        "addressCountry": "US"
+      }
     }
   },
   "proof": {
@@ -284,7 +288,15 @@ Specifies that the subject of the credential is a permanent resident.
 PermanentResidentCard
             </td>
             <td>
-Specifies that the credential is a permanent resident card.
+Specifies that the object is a permanent resident card.
+            </td>
+          </tr>
+          <tr>
+            <td>
+PermanentResidentCardCredential
+            </td>
+            <td>
+Specifies that the credential is a permanent resident card credential.
             </td>
           </tr>
           <tr>
@@ -458,6 +470,14 @@ lprNumber
             <td>
 The identifier which is used to identify the legal permanent resident by the
 country's official body for making such a determination.
+            </td>
+          </tr>
+          <tr>
+            <td>
+permanentResidentCard
+            </td>
+            <td>
+The permanent resident card of the Person.
             </td>
           </tr>
           <tr>
@@ -1081,6 +1101,43 @@ string
 
       </section>
       <section class="normative">
+        <h3>permanentResidentCard</h3>
+
+        <p>
+The permanent resident card of a legal permanent resident.
+        </p>
+
+        <table class="simple">
+          <tbody>
+            <tr>
+              <td>
+Term
+              </td>
+              <td>
+permanentResidentCard
+              </td>
+            </tr>
+            <tr>
+              <td>
+URL
+              </td>
+              <td>
+https://w3id.org/citizenship#permanentResidentCard
+              </td>
+            </tr>
+            <tr>
+              <td>
+Expected Value
+              </td>
+              <td>
+Object
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+      </section>
+      <section class="normative">
         <h3>maritalStatus</h3>
 
         <p>
@@ -1563,6 +1620,24 @@ This section outlines general internationalization considerations to take into
 account when utilizing this data model.
       </p>
 
+    </section>
+
+    <section class="informative">
+      <h2>Revision History</h2>
+
+      <h3>v2</h3>
+
+      <ul>
+        <li>
+Change outer `VerifiableCredential` type to `PermanentResidentCardCredential`.
+        </li>
+        <li>
+Change `credentialSubject` to a `Person` and `PermanentResident`.
+        </li>
+        <li>
+Add `permanentResidentCard` property for `PermanentResident`.
+        </li>
+      </ul>
     </section>
 
   </body>
