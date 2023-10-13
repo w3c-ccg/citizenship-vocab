@@ -22,7 +22,6 @@
 
         "filingLocation": {"@id": "https://w3id.org/citizenship#filingLocation", "@type": "@id"},
         "identifier": "https://schema.org/identifier",
-        "image": {"@id": "https://schema.org/image", "@type": "@id"},
         "lprCategory": "https://w3id.org/citizenship#lprCategory",
         "lprNumber": "https://w3id.org/citizenship#lprNumber"
       }
@@ -45,6 +44,7 @@
         "gender": "https://schema.org/gender",
         "givenName": "https://schema.org/givenName",
         "height": "https://schema.org/height",
+        "image": {"@id": "https://schema.org/image", "@type": "@id"},
         "maritalStatus": "https://w3id.org/citizenship#maritalStatus",
         "marriageCertificateNumber": "https://w3id.org/citizenship#marriageCertificateNumber",
         "marriageLocation": {"@id": "https://w3id.org/citizenship#marriageLocation", "@type": "@id"},
