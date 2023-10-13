@@ -43,7 +43,7 @@
         "marriageCertificateNumber": "https://w3id.org/citizenship#marriageCertificateNumber",
         "marriageLocation": {"@id": "https://w3id.org/citizenship#marriageLocation", "@type": "@id"},
         "permanentResidentCard": {"@id": "https://w3id.org/citizenship#permanentResidentCard", "@type": "@id"},
-        "residence": "https://w3id.org/citizenship#residence",
+        "residence": {"@id": "https://w3id.org/citizenship#residence", "@type": "@id"},
         "residentSince": {"@id": "https://w3id.org/citizenship#residentSince", "@type": "http://www.w3.org/2001/XMLSchema#dateTime"}
       }
     },
