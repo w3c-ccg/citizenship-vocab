@@ -12,5 +12,16 @@ on the
 [public-credentials](http://lists.w3.org/Archives/Public/public-credentials/)
 mailing list as well.
 
+### Testing Examples
+
+The example Verifiable Credentials are available in the [`examples/`](examples/)
+folder and can be tested directly using various tools such as the
+[JSON-LD CLI](https://github.com/digitalbazaar/jsonld-cli).
+
+```sh
+$ npm i -g jsonld-cli
+$ jsonld lint examples/ead.jsonld
+```
+
 ### Other useful links
 * [Public group email archive](https://lists.w3.org/Archives/Public/public-credentials/)
