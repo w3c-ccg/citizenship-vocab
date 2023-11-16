@@ -1,0 +1,70 @@
+{
+  "@context": [
+    "https://www.w3.org/2018/credentials/v1",
+    "https://w3id.org/citizenship/v2"
+  ],
+  "id": "https://issuer.oidp.uscis.example.gov/credentials/83627465",
+  "type": ["VerifiableCredential", "CertificateOfNaturalizationCredential"],
+  "name": "Certificate of Naturalization",
+  "description": "Example Country Certificate of Naturalization.",
+  "issuer": "did:example:28394728934792387",
+  "issuanceDate": "2019-12-03T12:19:52Z",
+  "credentialSubject": {
+    "id": "did:example:b34ca6cd37bbf23",
+    "type": ["Person", "NaturalizedPerson"],
+    "givenName": "JOHN",
+    "additionalName": "JACOB",
+    "familyName": "SMITH",
+    "image": "data:image/png;base64,iVBORw0KGgo...kJggg==",
+    "gender": "Male",
+    "residentSince": "2015-01-01",
+    "commuterClassification": "C1",
+    "birthCountry": "Bahamas",
+    "birthDate": "1958-07-17",
+    "height": {
+      "type": "QuantitativeValue",
+      "unitCode": "INH",
+      "value": 71
+    },
+    "residence": {
+      "type": "PostalAddress",
+      "addressLocality": "Boston",
+      "addressRegion": "Massachusetts",
+      "addressCountry": "US"
+    },
+    "formerNationality": "BS",
+    "maritalStatus": "married",
+    "marriageCertificateNumber": "A123B",
+    "marriageLocation": {
+      "type": "PostalAddress",
+      "addressLocality": "Nassau",
+      "addressRegion": "New Providence",
+      "addressCountry": "BS"
+    },
+    "certificateOfNaturalization": {
+      "type": "CertificateOfNaturalization",
+      "identifier": "83627465",
+      "insRegistrationNumber": "999-999-999",
+      "filingLocation": {
+        "type": "PostalAddress",
+        "addressLocality": "Washington, D.C.",
+        "addressRegion": "District of Columbia",
+        "addressCountry": "US"
+      },
+      "naturalizationLocation": {
+        "type": "PostalAddress",
+        "addressLocality": "San Antonio",
+        "addressRegion": "TX",
+        "addressCountry": "US"
+      },
+      "naturalizedBy": "U.S. Federal Court for the Western District of Texas"
+    }
+  },
+  "proof": {
+    "type": "Ed25519Signature2018",
+    "created": "2020-01-30T03:32:15Z",
+    "jws": "eyJhbGciOiJFZERTQSIsI...wRG2fNmAx60Vi4Ag",
+    "proofPurpose": "assertionMethod",
+    "verificationMethod": "did:example:28394728934792387#keys-7f83he7s8"
+  }
+}
