@@ -97,7 +97,9 @@
 
         "commuterClassification": "https://w3id.org/citizenship#commuterClassification",
         "employmentAuthorizationDocument": {"@id": "https://w3id.org/citizenship#employmentAuthorizationDocument", "@type": "@id"},
-        "formerNationality": "https://w3id.org/citizenship#formerNationality"
+        "formerNationality": "https://w3id.org/citizenship#formerNationality",
+        "residence": {"@id": "https://w3id.org/citizenship#residence", "@type": "@id"},
+        "residentSince": {"@id": "https://w3id.org/citizenship#residentSince", "@type": "http://www.w3.org/2001/XMLSchema#dateTime"}
       }
     },
 
@@ -135,7 +137,10 @@
         "type": "@type",
 
         "formerNationality": "https://w3id.org/citizenship#formerNationality",
-        "certificateOfNaturalization": {"@id": "https://w3id.org/citizenship#certificateOfNaturalization", "@type": "@id"}
+        "certificateOfNaturalization": {"@id": "https://w3id.org/citizenship#certificateOfNaturalization", "@type": "@id"},
+        "residence": {"@id": "https://w3id.org/citizenship#residence", "@type": "@id"},
+        "residentSince": {"@id": "https://w3id.org/citizenship#residentSince", "@type": "http://www.w3.org/2001/XMLSchema#dateTime"},
+        "commuterClassification": "https://w3id.org/citizenship#commuterClassification"
       }
     },
 
