@@ -81,8 +81,8 @@
       "@id": "https://w3id.org/citizenship#PermanentResidentCardCredential"
     },
 
-    "EmploymentAuthorizationPerson": {
-      "@id": "https://w3id.org/citizenship#EmploymentAuthorizationPerson",
+    "EmployablePerson": {
+      "@id": "https://w3id.org/citizenship#EmployablePerson",
       "@context": {
         "@protected": true,
 
