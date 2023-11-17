@@ -1,7 +1,7 @@
 {
   "@context": [
     "https://www.w3.org/2018/credentials/v1",
-    "https://w3id.org/citizenship/v3"
+    "https://w3id.org/citizenship/v2"
   ],
   "id": "https://issuer.oidp.uscis.example.gov/credentials/83627465",
   "type": ["VerifiableCredential", "CertificateOfNaturalizationCredential"],
