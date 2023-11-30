@@ -7,7 +7,7 @@
   "type": ["VerifiableCredential", "PermanentResidentCardCredential"],
   "name": "Permanent Resident Card",
   "description": "Example Country Permanent Resident Card.",
-  "issuer": "did:example:28394728934792387",
+  "issuer": "",
   "validFrom": "2019-12-03T12:19:52Z",
   "validUntil": "2029-12-03T12:19:52Z",
   "credentialSubject": {
@@ -54,12 +54,5 @@
         "addressCountry": "US"
       }
     }
-  },
-  "proof": {
-    "type": "Ed25519Signature2018",
-    "created": "2020-01-30T03:32:15Z",
-    "jws": "eyJhbGciOiJFZERTQSIsI...wRG2fNmAx60Vi4Ag",
-    "proofPurpose": "assertionMethod",
-    "verificationMethod": "did:example:28394728934792387#keys-7f83he7s8"
   }
 }
