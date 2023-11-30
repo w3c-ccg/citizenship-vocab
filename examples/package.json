@@ -1,0 +1,20 @@
+{
+  "name": "examples",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build.js"
+  },
+  "dependencies": {
+    "@digitalbazaar/credentials-v2-context": "github:digitalbazaar/credentials-v2-context#update",
+    "@digitalbazaar/data-integrity": "^2.0.0",
+    "@digitalbazaar/data-integrity-context": "^2.0.0",
+    "@digitalbazaar/did-method-key": "^5.1.0",
+    "@digitalbazaar/ecdsa-multikey": "^1.6.0",
+    "@digitalbazaar/ecdsa-rdfc-2019-cryptosuite": "^1.0.1",
+    "@digitalbazaar/security-document-loader": "^2.0.0",
+    "@digitalbazaar/vc": "github:digitalbazaar/vc#vc-2.0-time-props",
+    "@digitalbazaar/vpqr": "^4.0.0",
+    "canonicalize": "^2.0.0"
+  }
+}
