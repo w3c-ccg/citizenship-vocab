@@ -138,7 +138,7 @@
 
         "filingLocation": {"@id": "https://w3id.org/citizenship#filingLocation", "@type": "@id"},
         "naturalizationLocation": {"@id": "https://w3id.org/citizenship#naturalizationLocation", "@type": "@id"},
-        "naturalizedBy": {"@id": "https://w3id.org/citizenship#naturalizedBy", "@type": "@id"},
+        "naturalizedBy": "https://w3id.org/citizenship#naturalizedBy",
         "identifier": "https://schema.org/identifier",
         "insRegistrationNumber": "https://w3id.org/citizenship#insRegistrationNumber"
       }
