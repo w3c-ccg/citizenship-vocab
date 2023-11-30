@@ -77,9 +77,7 @@
       }
     },
 
-    "PermanentResidentCardCredential": {
-      "@id": "https://w3id.org/citizenship#PermanentResidentCardCredential"
-    },
+    "PermanentResidentCardCredential": "https://w3id.org/citizenship#PermanentResidentCardCredential",
 
     "EmployablePerson": {
       "@id": "https://w3id.org/citizenship#EmployablePerson",
@@ -112,9 +110,7 @@
       }
     },
 
-    "EmploymentAuthorizationDocumentCredential": {
-      "@id": "https://w3id.org/citizenship#EmploymentAuthorizationDocumentCredential"
-    },
+    "EmploymentAuthorizationDocumentCredential": "https://w3id.org/citizenship#EmploymentAuthorizationDocumentCredential",
 
     "NaturalizedPerson": {
       "@id": "https://w3id.org/citizenship#NaturalizedPerson",
@@ -148,9 +144,7 @@
       }
     },
 
-    "CertificateOfNaturalizationCredential": {
-      "@id": "https://w3id.org/citizenship#CertificateOfNaturalizationCredential"
-    },
+    "CertificateOfNaturalizationCredential": "https://w3id.org/citizenship#CertificateOfNaturalizationCredential",
 
     "Citizen": {
       "@id": "https://w3id.org/citizenship#Citizen",
@@ -178,8 +172,6 @@
       }
     },
 
-    "CertificateOfCitizenshipCredential": {
-      "@id": "https://w3id.org/citizenship#CertificateOfCitizenshipCredential"
-    }
+    "CertificateOfCitizenshipCredential": "https://w3id.org/citizenship#CertificateOfCitizenshipCredential"
   }
 }
