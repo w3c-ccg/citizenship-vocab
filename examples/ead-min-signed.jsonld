@@ -3,7 +3,6 @@
     "https://www.w3.org/ns/credentials/v2",
     "https://w3id.org/citizenship/v2"
   ],
-  "id": "https://issuer.oidp.uscis.example.gov/credentials/83627465",
   "type": [
     "VerifiableCredential",
     "EmploymentAuthorizationDocumentCredential"
@@ -11,10 +10,9 @@
   "name": "Employment Authorization Document",
   "description": "Example Country Employment Authorization Document.",
   "issuer": "did:key:zDnaeW9VZZs7NH1ykvS5EMFmdodu2wj4dPcrV3DzTAadrXJee",
-  "validFrom": "2019-12-03T12:19:52Z",
-  "validUntil": "2029-12-03T12:19:52Z",
+  "validFrom": "2023-12-03T12:19:52Z",
+  "validUntil": "2028-12-03T12:19:52Z",
   "credentialSubject": {
-    "id": "did:example:b34ca6cd37bbf23",
     "type": [
       "Person",
       "EmployablePerson"
@@ -39,6 +37,6 @@
     "verificationMethod": "did:key:zDnaeW9VZZs7NH1ykvS5EMFmdodu2wj4dPcrV3DzTAadrXJee#zDnaeW9VZZs7NH1ykvS5EMFmdodu2wj4dPcrV3DzTAadrXJee",
     "cryptosuite": "ecdsa-rdfc-2019",
     "proofPurpose": "assertionMethod",
-    "proofValue": "zoU3Gw2fN8EqJcrNxyfwHfzojNR9GfrvcPs9DYuD5sWoP9FMchUPrsVWygDZXckeviAc2gx9MhE4RV6sAfXy2qZM"
+    "proofValue": "z4GHDocJi8BK3LVe9YFDfbX82cZqbHnZzfRBKRvW6x5VBvpDb9i4RDccAweKNgd5w9qdQpSoiukeiq1pmWwpQKmrM"
   }
 }
