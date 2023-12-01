@@ -3,17 +3,13 @@
     "https://www.w3.org/ns/credentials/v2",
     "https://w3id.org/citizenship/v2"
   ],
-  "id": "https://issuer.oidp.uscis.example.gov/credentials/83627465",
   "type": [
     "VerifiableCredential",
     "CertificateOfNaturalizationCredential"
   ],
-  "name": "Certificate of Naturalization",
-  "description": "Example Country Certificate of Naturalization.",
   "issuer": "did:key:zDnaeW9VZZs7NH1ykvS5EMFmdodu2wj4dPcrV3DzTAadrXJee",
-  "validFrom": "2019-12-03T12:19:52Z",
+  "validFrom": "2023-12-03T12:19:52Z",
   "credentialSubject": {
-    "id": "did:example:b34ca6cd37bbf23",
     "type": [
       "Person",
       "NaturalizedPerson"
@@ -22,45 +18,16 @@
     "additionalName": "JACOB",
     "familyName": "SMITH",
     "gender": "Male",
-    "residentSince": "2015-01-01",
     "birthDate": "1958-07-17",
     "height": {
       "type": "QuantitativeValue",
       "unitCode": "INH",
       "value": 71
     },
-    "residence": {
-      "type": "PostalAddress",
-      "addressLocality": "Boston",
-      "addressRegion": "Massachusetts",
-      "addressCountry": "US"
-    },
-    "formerNationality": "BS",
-    "maritalStatus": "married",
-    "marriageCertificateNumber": "A123B",
-    "marriageLocation": {
-      "type": "PostalAddress",
-      "addressLocality": "Nassau",
-      "addressRegion": "New Providence",
-      "addressCountry": "BS"
-    },
     "certificateOfNaturalization": {
       "type": "CertificateOfNaturalization",
       "identifier": "83627465",
-      "insRegistrationNumber": "999-999-999",
-      "filingLocation": {
-        "type": "PostalAddress",
-        "addressLocality": "Washington, D.C.",
-        "addressRegion": "District of Columbia",
-        "addressCountry": "US"
-      },
-      "naturalizationLocation": {
-        "type": "PostalAddress",
-        "addressLocality": "San Antonio",
-        "addressRegion": "TX",
-        "addressCountry": "US"
-      },
-      "naturalizedBy": "U.S. Federal Court for the Western District of Texas"
+      "insRegistrationNumber": "999-999-999"
     }
   },
   "proof": {
@@ -69,6 +36,6 @@
     "verificationMethod": "did:key:zDnaeW9VZZs7NH1ykvS5EMFmdodu2wj4dPcrV3DzTAadrXJee#zDnaeW9VZZs7NH1ykvS5EMFmdodu2wj4dPcrV3DzTAadrXJee",
     "cryptosuite": "ecdsa-rdfc-2019",
     "proofPurpose": "assertionMethod",
-    "proofValue": "z5h5cJXg8AeFJWkzNgEKueqCSfzcNm6YzMSuYGCmJRatBWfULjqaiSQoepV8wNJMsqJCBMbo5kQJ4RttWvaQc6fSi"
+    "proofValue": "z4zxTBmTWmiVFqoM9RBXYWSExM7qbtP2RA7EKgqyGfXFm2WYZjammQfhzerutDBKn2TrNFbYxzP2LPLcj1r1Kksdz"
   }
 }
