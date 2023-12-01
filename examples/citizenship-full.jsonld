@@ -40,7 +40,14 @@
         "addressLocality": "Washington, D.C.",
         "addressRegion": "District of Columbia",
         "addressCountry": "US"
-      }
+      },
+      "ceremonyLocation": {
+        "type": "PostalAddress",
+        "addressLocality": "San Antonio",
+        "addressRegion": "TX",
+        "addressCountry": "US"
+      },
+      "ceremonyDate": "2023-11-23"
     }
   }
 }

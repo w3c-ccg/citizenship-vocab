@@ -136,6 +136,8 @@
         "id": "@id",
         "type": "@type",
 
+        "ceremonyDate": {"@id": "https://w3id.org/citizenship#ceremonyDate", "@type": "http://www.w3.org/2001/XMLSchema#dateTime"},
+        "ceremonyLocation": {"@id": "https://w3id.org/citizenship#ceremonyLocation", "@type": "@id"},
         "filingLocation": {"@id": "https://w3id.org/citizenship#filingLocation", "@type": "@id"},
         "naturalizationLocation": {"@id": "https://w3id.org/citizenship#naturalizationLocation", "@type": "@id"},
         "naturalizedBy": "https://w3id.org/citizenship#naturalizedBy",
@@ -168,6 +170,8 @@
 
         "filingLocation": {"@id": "https://w3id.org/citizenship#filingLocation", "@type": "@id"},
         "identifier": "https://schema.org/identifier",
+        "ceremonyDate": {"@id": "https://w3id.org/citizenship#ceremonyDate", "@type": "http://www.w3.org/2001/XMLSchema#dateTime"},
+        "ceremonyLocation": {"@id": "https://w3id.org/citizenship#ceremonyLocation", "@type": "@id"},
         "cisRegistrationNumber": "https://w3id.org/citizenship#cisRegistrationNumber"
       }
     },

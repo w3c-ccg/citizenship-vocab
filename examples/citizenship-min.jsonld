@@ -22,7 +22,20 @@
     "certificateOfCitizenship": {
       "type": "CertificateOfCitizenship",
       "identifier": "83627465",
-      "cisRegistrationNumber": "999-999-999"
+      "cisRegistrationNumber": "999-999-999",
+      "filingLocation": {
+        "type": "PostalAddress",
+        "addressLocality": "Washington, D.C.",
+        "addressRegion": "District of Columbia",
+        "addressCountry": "US"
+      },
+      "ceremonyLocation": {
+        "type": "PostalAddress",
+        "addressLocality": "San Antonio",
+        "addressRegion": "TX",
+        "addressCountry": "US"
+      },
+      "ceremonyDate": "2023-11-23"
     }
   }
 }
