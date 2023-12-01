@@ -4,8 +4,6 @@
     "https://w3id.org/citizenship/v2"
   ],
   "type": ["VerifiableCredential", "EmploymentAuthorizationDocumentCredential"],
-  "name": "Employment Authorization Document",
-  "description": "Example Country Employment Authorization Document.",
   "issuer": "",
   "validFrom": "2023-12-03T12:19:52Z",
   "validUntil": "2028-12-03T12:19:52Z",

@@ -70,6 +70,6 @@
     "verificationMethod": "did:key:zDnaeW9VZZs7NH1ykvS5EMFmdodu2wj4dPcrV3DzTAadrXJee#zDnaeW9VZZs7NH1ykvS5EMFmdodu2wj4dPcrV3DzTAadrXJee",
     "cryptosuite": "ecdsa-rdfc-2019",
     "proofPurpose": "assertionMethod",
-    "proofValue": "z54EztMXkrE5UeE9oS9D36YAvMi1jvfgaWBfxJtMArN5TsdfnDGUUMdeDEfRtNFH6S38ciNbfMR7SVr5EhKsvxWCe"
+    "proofValue": "z6DK1fApYNmzogaiwL2JDqxFxUFTrddyXmw9kTqXdb16FVvciZYEoeULGr57yD1LY3H8f2PSb9uJpTmoLJkkDbGk"
   }
 }

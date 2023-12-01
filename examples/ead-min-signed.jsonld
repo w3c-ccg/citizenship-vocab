@@ -7,8 +7,6 @@
     "VerifiableCredential",
     "EmploymentAuthorizationDocumentCredential"
   ],
-  "name": "Employment Authorization Document",
-  "description": "Example Country Employment Authorization Document.",
   "issuer": "did:key:zDnaeW9VZZs7NH1ykvS5EMFmdodu2wj4dPcrV3DzTAadrXJee",
   "validFrom": "2023-12-03T12:19:52Z",
   "validUntil": "2028-12-03T12:19:52Z",
@@ -37,6 +35,6 @@
     "verificationMethod": "did:key:zDnaeW9VZZs7NH1ykvS5EMFmdodu2wj4dPcrV3DzTAadrXJee#zDnaeW9VZZs7NH1ykvS5EMFmdodu2wj4dPcrV3DzTAadrXJee",
     "cryptosuite": "ecdsa-rdfc-2019",
     "proofPurpose": "assertionMethod",
-    "proofValue": "z4GHDocJi8BK3LVe9YFDfbX82cZqbHnZzfRBKRvW6x5VBvpDb9i4RDccAweKNgd5w9qdQpSoiukeiq1pmWwpQKmrM"
+    "proofValue": "z29MXt2T9FDFuDUVGw4vFW7ZDqxmEzUt5GPaCHAoE1YGzzeThM5bHz1uis5YTsGvU5H9wiAxMYGyZkHX6T9mBYpsD"
   }
 }
