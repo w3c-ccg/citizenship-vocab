@@ -78,9 +78,30 @@ async function generateKey() {
   return ecdsaKeyPair;
 }
 
-// example key
+// example static key
 // NOTE: use this to limit test output changes
 async function exampleKey() {
+  const publicKeyMultibase =
+    'zDnaeW9VZZs7NH1ykvS5EMFmdodu2wj4dPcrV3DzTAadrXJee';
+  const secretKeyMultibase =
+    'z42tpY3zN95smjbeUnE5kUDdg2Graw8pD199ct1SMWQ2djhE';
+
+  const controller = `did:key:${publicKeyMultibase}`;
+  const keyId = `${controller}#${publicKeyMultibase}`;
+
+  const ecdsaMultikeyKeyPair = {
+    '@context': 'https://w3id.org/security/multikey/v1',
+    type: 'Multikey',
+    controller,
+    id: keyId,
+    publicKeyMultibase,
+    secretKeyMultibase
+  };
+
+  const ecdsaKeyPair = await EcdsaMultikey.from({...ecdsaMultikeyKeyPair});
+  console.log(ecdsaKeyPair);
+
+  return ecdsaKeyPair;
 }
 
 async function sign({
@@ -132,9 +153,9 @@ async function _example({name}) {
   const input = JSON.parse(inputJson);
 
   // generate new key
-  const ecdsaKeyPair = await generateKey();
+  //const ecdsaKeyPair = await generateKey();
   // use static key to avoid test output churn
-  //const keyPair = await exampleKey();
+  const ecdsaKeyPair = await exampleKey();
 
   // set signing date
   // NOTE: using static date to limit test output changes
