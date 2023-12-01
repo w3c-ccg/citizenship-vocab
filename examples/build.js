@@ -239,7 +239,7 @@ async function _example({name}) {
   // write out info HTML
   const infoHTML = `
 <div>
-  <table class="simple">
+  <table class="simple vc-info">
     <thead>
       <tr>
         <th>Property</th>
@@ -249,7 +249,7 @@ async function _example({name}) {
     <tbody>
       <tr>
         <td>QR Code Version</td>
-        <td>12</td>
+        <td>${data.vcQrCodeVersion}</td>
       </tr>
       <tr>
         <td>Verifiable Credential JSON-LD</td>
@@ -284,10 +284,14 @@ async function _example({name}) {
 
 async function main() {
   const examples = [
-    'citizenship',
-    'ead',
-    'naturalization',
-    'prc'
+    'citizenship-min',
+    'citizenship-full',
+    'ead-min',
+    'ead-full',
+    'naturalization-min',
+    'naturalization-full',
+    'prc-min',
+    'prc-full'
   ];
   for(const example of examples) {
     await _example({name: example});
