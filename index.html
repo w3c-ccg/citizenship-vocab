@@ -117,6 +117,9 @@ pre .comment {
   font-weight: bold;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
+table.vc-info th:nth-child(2), table.vc-info td:nth-child(2) {
+  text-align: right
+}
     </style>
   </head>
   <body>
@@ -163,16 +166,24 @@ find useful:
 
         <ul>
           <li>
-<a href="#permanent-resident-card-example">Permanent Resident Card</a>
+Permanent Resident Card
+(<a href="#minimal-permanent-resident-card-example">minimal</a>)
+(<a href="#full-permanent-resident-card-example">full</a>)
           </li>
           <li>
-<a href="#employment-authorization-document-example">Employment Authorization Document</a>
+Employment Authorization Document
+(<a href="#minimal-employment-authorization-document-example">minimal</a>)
+(<a href="#full-employment-authorization-document-example">full</a>)
           </li>
           <li>
-<a href="#certificate-of-naturalization-example">Certificate of Naturalization</a>
+Certificate of Naturalization
+(<a href="#minimal-certificate-of-naturalization-example">minimal</a>)
+(<a href="#full-certificate-of-naturalization-example">full</a>)
           </li>
           <li>
-<a href="#certificate-of-citizenship-example">Certificate of Citizenship</a>
+Certificate of Citizenship
+(<a href="#minimal-certificate-of-citizenship-example">minimal</a>)
+(<a href="#full-certificate-of-citizenship-example">full</a>)
           </li>
         </ul>
 
@@ -181,88 +192,151 @@ find useful:
       <section class="informative">
         <h3>Examples</h3>
 
-        <section class="informative">
-          <h4>Permanent Resident Card Example</h4>
+        <ul>
+          <li>
+In all examples, optional country-specific term additions can be added to the
+end of the `@context` array e.g., `https://example.gov/example/v1`.
+          </li>
+          <li>
+The QR code image sizes can have slight variations due to the use of
+non-deterministic ECDSA signatures and image compression.
+          </li>
+        </ul>
 
-          <p>
-            Optional country-specific term additions can be added to the end of
-            the `@context` array e.g., `https://example.gov/prc/v1`.
-          </p>
+        <!-- Permanent Resident Card -->
+
+        <section class="informative">
+          <h4>Minimal Permanent Resident Card Example</h4>
 
           <pre class="example"
-            title="Permanent Resident Card VC"
-            data-include="examples/prc-signed.jsonld"></pre>
+            title="Minimal Permanent Resident Card VC"
+            data-include="examples/prc-min-signed.jsonld"></pre>
 
           <aside class="example"
-            title="Permanent Resident Card QR Code"
-            data-include="examples/prc-qrcode.html"></aside>
+            title="Minimal Permanent Resident Card QR Code"
+            data-include="examples/prc-min-qrcode.html"></aside>
 
           <aside class="example"
-            title="Permanent Resident Card Information"
-            data-include="examples/prc-info.html"></aside>
+            title="Minimal Permanent Resident Card Information"
+            data-include="examples/prc-min-info.html"></aside>
         </section>
 
         <section class="informative">
-          <h4>Employment Authorization Document Example</h4>
+          <h4>Full Permanent Resident Card Example</h4>
 
-          <p>
-            Optional country-specific term additions can be added to the end of
-            the `@context` array e.g., `https://example.gov/ead/v1`.
-          </p>
+          <pre class="example"
+            title="Full Permanent Resident Card VC"
+            data-include="examples/prc-full-signed.jsonld"></pre>
+
+          <aside class="example"
+            title="Full Permanent Resident Card QR Code"
+            data-include="examples/prc-full-qrcode.html"></aside>
+
+          <aside class="example"
+            title="Full Permanent Resident Card Information"
+            data-include="examples/prc-full-info.html"></aside>
+        </section>
+
+        <!-- Employment Authorization Document -->
+
+        <section class="informative">
+          <h4>Minimal Employment Authorization Document Example</h4>
 
           <pre class="example"
             title="Employment Authorization Document VC"
-            data-include="examples/ead-signed.jsonld"></pre>
+            data-include="examples/ead-min-signed.jsonld"></pre>
 
           <aside class="example"
             title="Employment Authorization Document QR Code"
-            data-include="examples/ead-qrcode.html"></aside>
+            data-include="examples/ead-min-qrcode.html"></aside>
 
           <aside class="example"
             title="Employment Authorization Document Information"
-            data-include="examples/ead-info.html"></aside>
+            data-include="examples/ead-min-info.html"></aside>
         </section>
 
         <section class="informative">
-          <h4>Certificate of Naturalization Example</h4>
-
-          <p>
-            Optional country-specific term additions can be added to the end of
-            the `@context` array e.g., `https://example.gov/naturalization/v1`.
-          </p>
+          <h4>Full Employment Authorization Document Example</h4>
 
           <pre class="example"
-            title="Certificate of Naturalization VC"
-            data-include="examples/naturalization-signed.jsonld"></pre>
+            title="Full Employment Authorization Document VC"
+            data-include="examples/ead-full-signed.jsonld"></pre>
 
           <aside class="example"
-            title="Certificate of Naturalization QR Code"
-            data-include="examples/naturalization-qrcode.html"></aside>
+            title="Full Employment Authorization Document QR Code"
+            data-include="examples/ead-full-qrcode.html"></aside>
 
           <aside class="example"
-            title="Certificate of Naturalization Information"
-            data-include="examples/naturalization-info.html"></aside>
+            title="Full Employment Authorization Document Information"
+            data-include="examples/ead-full-info.html"></aside>
+        </section>
+
+        <!-- Certificate of Naturalization -->
+
+        <section class="informative">
+          <h4>Minimal Certificate of Naturalization Example</h4>
+
+          <pre class="example"
+            title="Minimal Certificate of Naturalization VC"
+            data-include="examples/naturalization-min-signed.jsonld"></pre>
+
+          <aside class="example"
+            title="Minimal Certificate of Naturalization QR Code"
+            data-include="examples/naturalization-min-qrcode.html"></aside>
+
+          <aside class="example"
+            title="Minimal Certificate of Naturalization Information"
+            data-include="examples/naturalization-min-info.html"></aside>
         </section>
 
         <section class="informative">
-          <h4>Certificate of Citizenship Example</h4>
-
-          <p>
-            Optional country-specific term additions can be added to the end of
-            the `@context` array e.g., `https://example.gov/citizenship/v1`.
-          </p>
+          <h4>Full Certificate of Naturalization Example</h4>
 
           <pre class="example"
-            title="Certificate of Citizenship VC"
-            data-include="examples/citizenship-signed.jsonld"></pre>
+            title="Full Certificate of Naturalization VC"
+            data-include="examples/naturalization-full-signed.jsonld"></pre>
 
           <aside class="example"
-            title="Certificate of Citizenship QR Code"
-            data-include="examples/citizenship-qrcode.html"></aside>
+            title="Full Certificate of Naturalization QR Code"
+            data-include="examples/naturalization-full-qrcode.html"></aside>
 
           <aside class="example"
-            title="Certificate of Citizenship Information"
-            data-include="examples/citizenship-info.html"></aside>
+            title="Full Certificate of Naturalization Information"
+            data-include="examples/naturalization-full-info.html"></aside>
+        </section>
+
+        <!-- Certificate of Citizenship -->
+
+        <section class="informative">
+          <h4>Minimal Certificate of Citizenship Example</h4>
+
+          <pre class="example"
+            title="Minimal Certificate of Citizenship VC"
+            data-include="examples/citizenship-min-signed.jsonld"></pre>
+
+          <aside class="example"
+            title="Minimal Certificate of Citizenship QR Code"
+            data-include="examples/citizenship-min-qrcode.html"></aside>
+
+          <aside class="example"
+            title="Minimal Certificate of Citizenship Information"
+            data-include="examples/citizenship-min-info.html"></aside>
+        </section>
+
+        <section class="informative">
+          <h4>Full Certificate of Citizenship Example</h4>
+
+          <pre class="example"
+            title="Full Certificate of Citizenship VC"
+            data-include="examples/citizenship-full-signed.jsonld"></pre>
+
+          <aside class="example"
+            title="Full Certificate of Citizenship QR Code"
+            data-include="examples/citizenship-full-qrcode.html"></aside>
+
+          <aside class="example"
+            title="Full Certificate of Citizenship Information"
+            data-include="examples/citizenship-full-info.html"></aside>
         </section>
       </section>
     </section>

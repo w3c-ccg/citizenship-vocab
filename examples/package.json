@@ -3,7 +3,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "node build.js"
+    "build": "node build.js",
+    "clean": "rm -rf *-signed.jsonld *-qrcode.html *-info.html"
   },
   "dependencies": {
     "@digitalbazaar/credentials-v2-context": "github:digitalbazaar/credentials-v2-context#update",

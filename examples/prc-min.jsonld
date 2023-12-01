@@ -1,0 +1,41 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2",
+    "https://w3id.org/citizenship/v2"
+  ],
+  "type": [
+    "VerifiableCredential",
+    "PermanentResidentCardCredential"
+  ],
+  "name": "Permanent Resident Card",
+  "issuer": "",
+  "validFrom": "2023-12-03T12:19:52Z",
+  "validUntil": "2028-12-03T12:19:52Z",
+  "credentialSubject": {
+    "id": "did:example:b34ca6cd37bbf23",
+    "type": [
+      "Person",
+      "PermanentResident"
+    ],
+    "givenName": "JOHN",
+    "additionalName": "JACOB",
+    "familyName": "SMITH",
+    "gender": "Male",
+    "residentSince": "2015-01-01",
+    "commuterClassification": "C1",
+    "birthCountry": "Bahamas",
+    "birthDate": "1958-07-17",
+    "height": {
+      "type": "QuantitativeValue",
+      "unitCode": "INH",
+      "value": 71
+    },
+    "formerNationality": "BS",
+    "permanentResidentCard": {
+      "type": "PermanentResidentCard",
+      "identifier": "83627465",
+      "lprCategory": "C09",
+      "lprNumber": "999-999-999"
+    }
+  }
+}
