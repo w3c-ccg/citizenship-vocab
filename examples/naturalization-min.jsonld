@@ -18,10 +18,39 @@
       "unitCode": "INH",
       "value": 71
     },
+    "residence": {
+      "type": "PostalAddress",
+      "addressLocality": "Boston",
+      "addressRegion": "Massachusetts",
+      "addressCountry": "US"
+    },
+    "formerNationality": "Bahamas",
+    "maritalStatus": "married",
+    "marriageCertificateNumber": "A123B",
+    "marriageLocation": {
+      "type": "PostalAddress",
+      "addressLocality": "Nassau",
+      "addressRegion": "New Providence",
+      "addressCountry": "BS"
+    },
     "certificateOfNaturalization": {
       "type": "CertificateOfNaturalization",
       "identifier": "83627465",
-      "insRegistrationNumber": "999-999-999"
+      "insRegistrationNumber": "999-999-999",
+      "filingLocation": {
+        "type": "PostalAddress",
+        "addressLocality": "Washington, D.C.",
+        "addressRegion": "District of Columbia",
+        "addressCountry": "US"
+      },
+      "ceremonyLocation": {
+        "type": "PostalAddress",
+        "addressLocality": "San Antonio",
+        "addressRegion": "TX",
+        "addressCountry": "US"
+      },
+      "ceremonyDate": "2023-11-23",
+      "naturalizedBy": "U.S. Federal Court for the Western District of Texas"
     }
   }
 }

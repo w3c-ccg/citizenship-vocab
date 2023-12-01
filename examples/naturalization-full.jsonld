@@ -49,12 +49,13 @@
         "addressRegion": "District of Columbia",
         "addressCountry": "US"
       },
-      "naturalizationLocation": {
+      "ceremonyLocation": {
         "type": "PostalAddress",
         "addressLocality": "San Antonio",
         "addressRegion": "TX",
         "addressCountry": "US"
       },
+      "ceremonyDate": "2023-11-23",
       "naturalizedBy": "U.S. Federal Court for the Western District of Texas"
     }
   }
