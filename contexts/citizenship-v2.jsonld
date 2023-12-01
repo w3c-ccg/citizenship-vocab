@@ -73,7 +73,11 @@
         "filingLocation": {"@id": "https://w3id.org/citizenship#filingLocation", "@type": "@id"},
         "identifier": "https://schema.org/identifier",
         "lprCategory": "https://w3id.org/citizenship#lprCategory",
-        "lprNumber": "https://w3id.org/citizenship#lprNumber"
+        "lprNumber": "https://w3id.org/citizenship#lprNumber",
+        "mrzHash": {
+          "@id": "https://w3id.org/citizenship#mrzHash",
+          "@type": "https://w3id.org/security#multibase"
+        }
       }
     },
 
@@ -106,7 +110,11 @@
         "filingLocation": {"@id": "https://w3id.org/citizenship#filingLocation", "@type": "@id"},
         "identifier": "https://schema.org/identifier",
         "lprCategory": "https://w3id.org/citizenship#lprCategory",
-        "lprNumber": "https://w3id.org/citizenship#lprNumber"
+        "lprNumber": "https://w3id.org/citizenship#lprNumber",
+        "mrzHash": {
+          "@id": "https://w3id.org/citizenship#mrzHash",
+          "@type": "https://w3id.org/security#multibase"
+        }
       }
     },
 

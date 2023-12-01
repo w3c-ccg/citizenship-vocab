@@ -25,7 +25,8 @@
       "type": "EmploymentAuthorizationDocument",
       "identifier": "83627465",
       "lprCategory": "C09",
-      "lprNumber": "999-999-999"
+      "lprNumber": "999-999-999",
+      "mrzHash": "z5SbtwbUjjoALCAfF6gPAnHgbqb3qmmGwJiPh6YTj4Cv"
     }
   }
 }
