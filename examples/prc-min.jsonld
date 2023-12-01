@@ -12,7 +12,6 @@
   "validFrom": "2023-12-03T12:19:52Z",
   "validUntil": "2028-12-03T12:19:52Z",
   "credentialSubject": {
-    "id": "did:example:b34ca6cd37bbf23",
     "type": [
       "Person",
       "PermanentResident"
