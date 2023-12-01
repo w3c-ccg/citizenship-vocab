@@ -1,0 +1,45 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2",
+    "https://w3id.org/citizenship/v2"
+  ],
+  "id": "https://issuer.oidp.uscis.example.gov/credentials/83627465",
+  "type": [
+    "VerifiableCredential",
+    "EmploymentAuthorizationDocumentCredential"
+  ],
+  "name": "Employment Authorization Document",
+  "description": "Example Country Employment Authorization Document.",
+  "issuer": "did:key:zDnaeW9VZZs7NH1ykvS5EMFmdodu2wj4dPcrV3DzTAadrXJee",
+  "validFrom": "2019-12-03T12:19:52Z",
+  "validUntil": "2029-12-03T12:19:52Z",
+  "credentialSubject": {
+    "id": "did:example:b34ca6cd37bbf23",
+    "type": [
+      "Person",
+      "EmployablePerson"
+    ],
+    "givenName": "JOHN",
+    "additionalName": "JACOB",
+    "familyName": "SMITH",
+    "image": "data:image/png;base64,iVBORw0KGgo...kJggg==",
+    "gender": "Male",
+    "residentSince": "2015-01-01",
+    "birthCountry": "Bahamas",
+    "birthDate": "1958-07-17",
+    "employmentAuthorizationDocument": {
+      "type": "EmploymentAuthorizationDocument",
+      "identifier": "83627465",
+      "lprCategory": "C09",
+      "lprNumber": "999-999-999"
+    }
+  },
+  "proof": {
+    "type": "DataIntegrityProof",
+    "created": "2023-01-01T01:01:01Z",
+    "verificationMethod": "did:key:zDnaeW9VZZs7NH1ykvS5EMFmdodu2wj4dPcrV3DzTAadrXJee#zDnaeW9VZZs7NH1ykvS5EMFmdodu2wj4dPcrV3DzTAadrXJee",
+    "cryptosuite": "ecdsa-rdfc-2019",
+    "proofPurpose": "assertionMethod",
+    "proofValue": "z28GttyQNn44qWLw3C4Hou4XgbgXkWNgS6N9PGMpSUMPRCDkU2eStEfgmmucxfv9FqxcGUJyX7KJCRqrPjBpvKywo"
+  }
+}

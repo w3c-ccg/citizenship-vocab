@@ -1,0 +1,72 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2",
+    "https://w3id.org/citizenship/v2"
+  ],
+  "id": "https://issuer.oidp.uscis.example.gov/credentials/83627465",
+  "type": [
+    "VerifiableCredential",
+    "PermanentResidentCardCredential"
+  ],
+  "name": "Permanent Resident Card",
+  "description": "Example Country Permanent Resident Card.",
+  "issuer": "did:key:zDnaeW9VZZs7NH1ykvS5EMFmdodu2wj4dPcrV3DzTAadrXJee",
+  "validFrom": "2019-12-03T12:19:52Z",
+  "validUntil": "2029-12-03T12:19:52Z",
+  "credentialSubject": {
+    "id": "did:example:b34ca6cd37bbf23",
+    "type": [
+      "Person",
+      "PermanentResident"
+    ],
+    "givenName": "JOHN",
+    "additionalName": "JACOB",
+    "familyName": "SMITH",
+    "image": "data:image/png;base64,iVBORw0KGgo...kJggg==",
+    "gender": "Male",
+    "residentSince": "2015-01-01",
+    "commuterClassification": "C1",
+    "birthCountry": "Bahamas",
+    "birthDate": "1958-07-17",
+    "height": {
+      "type": "QuantitativeValue",
+      "unitCode": "INH",
+      "value": 71
+    },
+    "residence": {
+      "type": "PostalAddress",
+      "addressLocality": "Boston",
+      "addressRegion": "Massachusetts",
+      "addressCountry": "US"
+    },
+    "formerNationality": "BS",
+    "maritalStatus": "married",
+    "marriageCertificateNumber": "A123B",
+    "marriageLocation": {
+      "type": "PostalAddress",
+      "addressLocality": "Nassau",
+      "addressRegion": "New Providence",
+      "addressCountry": "BS"
+    },
+    "permanentResidentCard": {
+      "type": "PermanentResidentCard",
+      "identifier": "83627465",
+      "lprCategory": "C09",
+      "lprNumber": "999-999-999",
+      "filingLocation": {
+        "type": "PostalAddress",
+        "addressLocality": "Washington, D.C.",
+        "addressRegion": "District of Columbia",
+        "addressCountry": "US"
+      }
+    }
+  },
+  "proof": {
+    "type": "DataIntegrityProof",
+    "created": "2023-01-01T01:01:01Z",
+    "verificationMethod": "did:key:zDnaeW9VZZs7NH1ykvS5EMFmdodu2wj4dPcrV3DzTAadrXJee#zDnaeW9VZZs7NH1ykvS5EMFmdodu2wj4dPcrV3DzTAadrXJee",
+    "cryptosuite": "ecdsa-rdfc-2019",
+    "proofPurpose": "assertionMethod",
+    "proofValue": "z3N5A7StxykeD6j2Q3oq4ZtwLDaw6GdwhboxE1cR6rvDfQwGLAmK79wsBtUHtWbaU58K5ohDGSqQwUqVU7NUFWGp8"
+  }
+}

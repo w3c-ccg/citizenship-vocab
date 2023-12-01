@@ -1,0 +1,49 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2",
+    "https://w3id.org/citizenship/v2"
+  ],
+  "type": [
+    "VerifiableCredential",
+    "PermanentResidentCardCredential"
+  ],
+  "name": "Permanent Resident Card",
+  "issuer": "did:key:zDnaeW9VZZs7NH1ykvS5EMFmdodu2wj4dPcrV3DzTAadrXJee",
+  "validFrom": "2023-12-03T12:19:52Z",
+  "validUntil": "2028-12-03T12:19:52Z",
+  "credentialSubject": {
+    "id": "did:example:b34ca6cd37bbf23",
+    "type": [
+      "Person",
+      "PermanentResident"
+    ],
+    "givenName": "JOHN",
+    "additionalName": "JACOB",
+    "familyName": "SMITH",
+    "gender": "Male",
+    "residentSince": "2015-01-01",
+    "commuterClassification": "C1",
+    "birthCountry": "Bahamas",
+    "birthDate": "1958-07-17",
+    "height": {
+      "type": "QuantitativeValue",
+      "unitCode": "INH",
+      "value": 71
+    },
+    "formerNationality": "BS",
+    "permanentResidentCard": {
+      "type": "PermanentResidentCard",
+      "identifier": "83627465",
+      "lprCategory": "C09",
+      "lprNumber": "999-999-999"
+    }
+  },
+  "proof": {
+    "type": "DataIntegrityProof",
+    "created": "2023-01-01T01:01:01Z",
+    "verificationMethod": "did:key:zDnaeW9VZZs7NH1ykvS5EMFmdodu2wj4dPcrV3DzTAadrXJee#zDnaeW9VZZs7NH1ykvS5EMFmdodu2wj4dPcrV3DzTAadrXJee",
+    "cryptosuite": "ecdsa-rdfc-2019",
+    "proofPurpose": "assertionMethod",
+    "proofValue": "z5WWp1DuCvtjv7sPmuE8MStUZcXbA6bWASYzMtR8ev2U9eUf6k3dDDSNqsUZPuyTPYcWHEM8vJPnS5bVUSVuZnC5w"
+  }
+}
