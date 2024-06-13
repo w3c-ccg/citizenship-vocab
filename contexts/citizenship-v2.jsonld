@@ -184,6 +184,24 @@
       }
     },
 
-    "CertificateOfCitizenshipCredential": "https://w3id.org/citizenship#CertificateOfCitizenshipCredential"
+    "CertificateOfCitizenshipCredential": "https://w3id.org/citizenship#CertificateOfCitizenshipCredential",
+    "OpticalBarcodeCredential": "https://w3id.org/citizenship#OpticalBarcodeCredential",
+    "TerseBitstringStatusListEntry": {
+      "@id":
+        "https://w3id.org/citizenship#TerseBitstringStatusListEntry",
+      "@context": {
+        "@protected": true,
+
+        "id": "@id",
+        "type": "@type",
+
+        "terseStatusListBaseUrl": {
+          "@type": "@id",
+          "@id": "https://w3id.org/citizenship#terseStatusListBaseUrl"
+        },
+        "terseStatusListIndex":
+          "https://w3id.org/citizenship#terseStatusListIndex"
+      }
+    }
   }
 }
