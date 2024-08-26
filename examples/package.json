@@ -7,14 +7,14 @@
     "clean": "rm -rf *-signed.jsonld *-qrcode.html *-info.html"
   },
   "dependencies": {
-    "@digitalbazaar/credentials-v2-context": "github:digitalbazaar/credentials-v2-context",
+    "@digitalbazaar/credentials-context": "^3.1.0",
     "@digitalbazaar/data-integrity": "^2.0.0",
     "@digitalbazaar/data-integrity-context": "^2.0.0",
     "@digitalbazaar/did-method-key": "^5.1.0",
     "@digitalbazaar/ecdsa-multikey": "^1.6.0",
     "@digitalbazaar/ecdsa-rdfc-2019-cryptosuite": "^1.0.1",
     "@digitalbazaar/security-document-loader": "^2.0.0",
-    "@digitalbazaar/vc": "github:digitalbazaar/vc#update-vc-2.0",
+    "@digitalbazaar/vc": "^7.0.0",
     "@digitalbazaar/vpqr": "^4.0.0",
     "canonicalize": "^2.0.0"
   }
