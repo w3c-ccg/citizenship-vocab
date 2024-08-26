@@ -30,12 +30,12 @@ import {securityLoader} from '@digitalbazaar/security-document-loader';
 
 //import secCtx from '@digitalbazaar/security-context';
 import diCtx from '@digitalbazaar/data-integrity-context';
-import credV2Ctx from '@digitalbazaar/credentials-v2-context';
+import * as credContexts from '@digitalbazaar/credentials-context';
 
 const loader = securityLoader();
 const contexts = [
   diCtx,
-  credV2Ctx
+  credContexts
 ];
 for(const context of contexts) {
   for(const [url, c] of context.contexts.entries()) {
